@@ -267,8 +267,6 @@ class COCO:
         res = COCO()
         res.dataset['images'] = [img for img in self.dataset['images']]
         res.dataset['info'] = copy.deepcopy(self.dataset['info'])
-        #res.dataset['type'] = copy.deepcopy(self.dataset['type'])
-        #res.dataset['licenses'] = copy.deepcopy(self.dataset['licenses'])
 
         #print('Loading and preparing results...     ')
         time_t = datetime.datetime.utcnow()
